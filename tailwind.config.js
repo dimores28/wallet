@@ -16,8 +16,7 @@ module.exports = {
       xl: '1440px',
     },
     fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
+      body: ['Roboto', 'Raleway']
     },
      extend: {
       spacing: {
