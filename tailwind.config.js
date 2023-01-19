@@ -18,6 +18,12 @@ module.exports = {
     fontFamily: {
       body: ['Roboto', 'Raleway']
     },
+    fontSize: {
+      sm: ['12px', '14px'],
+      base: ['14px', '16px'],
+      lg: ['16px', '19px'],
+      xl: ['18px', '21px'],
+    },
      extend: {
       spacing: {
         '128': '32rem',
