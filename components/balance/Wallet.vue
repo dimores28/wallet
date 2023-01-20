@@ -6,10 +6,21 @@
     <BalanceCurrency />
     <BalanceCurrency />
     <BalanceCurrency />
-    <BalanceCurrency />
+    <BalanceCurrency :offBottomBorder="true" />
 
     <BalanceTotal />
   </div>
 </template>
 
-<script setup></script>
+<script>
+import { useWalletStore } from "@/stores/wallet";
+
+export default {
+  setup() {
+    const wallet = useWalletStore();
+    wallet.loadBalance();
+
+    return { wallet };
+  }
+};
+</script>

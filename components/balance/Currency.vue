@@ -1,6 +1,7 @@
 <template>
   <div
-    class="flex justify-between rounded border-b border-dashed border-[#24A0F5]/20 mb-1 pb-3.5 pt-2.5"
+    class="flex justify-between rounded mb-1 pb-3.5 pt-2.5"
+    :class="offBottomBorder ? '' : 'border-b border-dashed border-[#24A0F5]/20'"
   >
     <div class="font-['Raleway']">
       <div class="text-lg font-medium mb-3 flex items-center">
@@ -38,4 +39,13 @@
   </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  props: {
+    offBottomBorder: {
+      type: Boolean,
+      default: false
+    }
+  }
+};
+</script>
